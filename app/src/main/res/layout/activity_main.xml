@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -17,48 +18,48 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox" />
+        android:id="@+id/arms"/>
 
     <CheckBox
         android:text="@string/shoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox"
+        android:layout_above="@+id/arms"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox2" />
+        android:id="@+id/shoes" />
 
     <CheckBox
         android:text="@string/eyes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox2"
+        android:layout_above="@+id/shoes"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox3" />
+        android:id="@+id/eyes" />
 
     <CheckBox
         android:text="@string/moustache"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox4"
-        android:id="@+id/checkBox5" />
+        android:layout_above="@+id/hat"
+        android:id="@+id/moustache" />
 
     <CheckBox
         android:text="@string/ears"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/checkBox9"
-        android:layout_alignLeft="@+id/checkBox9"
-        android:layout_alignStart="@+id/checkBox9"
-        android:id="@+id/checkBox10" />
+        android:layout_above="@+id/nose"
+        android:layout_alignLeft="@+id/nose"
+        android:layout_alignStart="@+id/nose"
+        android:id="@+id/ears" />
 
     <CheckBox
         android:text="@string/hat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox4"
-        android:layout_above="@+id/checkBox3"
+        android:id="@+id/hat"
+        android:layout_above="@+id/eyes"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -66,17 +67,17 @@
         android:text="@string/nose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox9"
-        android:layout_above="@+id/checkBox8"
-        android:layout_alignLeft="@+id/checkBox8"
-        android:layout_alignStart="@+id/checkBox8" />
+        android:id="@+id/nose"
+        android:layout_above="@+id/eyebrows"
+        android:layout_alignLeft="@+id/eyebrows"
+        android:layout_alignStart="@+id/eyebrows" />
 
     <CheckBox
         android:text="@string/mouth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox7"
-        android:layout_above="@+id/checkBox6"
+        android:id="@+id/mouth"
+        android:layout_above="@+id/glasses"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="29dp"
@@ -86,17 +87,128 @@
         android:text="@string/eyebrows"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox8"
-        android:layout_above="@+id/checkBox7"
-        android:layout_alignLeft="@+id/checkBox7"
-        android:layout_alignStart="@+id/checkBox7" />
+        android:id="@+id/eyebrows"
+        android:layout_above="@+id/mouth"
+        android:layout_alignLeft="@+id/mouth"
+        android:layout_alignStart="@+id/mouth" />
 
     <CheckBox
         android:text="@string/glasses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox6"
+        android:id="@+id/glasses"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/checkBox7"
-        android:layout_alignStart="@+id/checkBox7" />
+        android:layout_alignLeft="@+id/mouth"
+        android:layout_alignStart="@+id/mouth" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/body"
+        android:id="@+id/bodyimg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arms"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/moustache"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ears"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eyebrows"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eyes"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/glasses"
+        android:id="@+id/imageView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hat"
+        android:id="@+id/imageView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mouth"
+        android:id="@+id/imageView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mustache"
+        android:id="@+id/imageView10"
+        android:layout_above="@+id/moustache"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nose"
+        android:id="@+id/imageView11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/imageView10" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shoes"
+        android:id="@+id/imageView12"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/moustache" />
+
+
 </RelativeLayout>
